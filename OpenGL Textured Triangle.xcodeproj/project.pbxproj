@@ -13,9 +13,19 @@
 		ACDC5320178CE3C8003BE73C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACDC531E178CE3C8003BE73C /* InfoPlist.strings */; };
 		ACDC5322178CE3C8003BE73C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC5321178CE3C8003BE73C /* main.m */; };
 		ACDC5326178CE3C8003BE73C /* GLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC5325178CE3C8003BE73C /* GLAppDelegate.m */; };
-		ACDC5328178CE3C8003BE73C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5327178CE3C8003BE73C /* Default.png */; };
-		ACDC532A178CE3C8003BE73C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5329178CE3C8003BE73C /* Default@2x.png */; };
-		ACDC532C178CE3C8003BE73C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC532B178CE3C8003BE73C /* Default-568h@2x.png */; };
+		ACDC5345178CE436003BE73C /* GLEUContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC5336178CE436003BE73C /* GLEUContext.m */; };
+		ACDC5346178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC5338178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m */; };
+		ACDC5347178CE436003BE73C /* GLTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC533A178CE436003BE73C /* GLTriangleViewController.m */; };
+		ACDC5348178CE436003BE73C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533C178CE436003BE73C /* Default-568h@2x.png */; };
+		ACDC5349178CE436003BE73C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533D178CE436003BE73C /* Default.png */; };
+		ACDC534A178CE436003BE73C /* Default.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533E178CE436003BE73C /* Default.pxm */; };
+		ACDC534B178CE436003BE73C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533F178CE436003BE73C /* Default@2x.png */; };
+		ACDC534C178CE436003BE73C /* Default@2x.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5340178CE436003BE73C /* Default@2x.pxm */; };
+		ACDC534D178CE436003BE73C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5341178CE436003BE73C /* Icon.png */; };
+		ACDC534E178CE436003BE73C /* Icon.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5342178CE436003BE73C /* Icon.pxm */; };
+		ACDC534F178CE436003BE73C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5343178CE436003BE73C /* Icon@2x.png */; };
+		ACDC5350178CE436003BE73C /* Icon@2x.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5344178CE436003BE73C /* Icon@2x.pxm */; };
+		ACDC5352178CE45B003BE73C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5351178CE45B003BE73C /* iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +39,23 @@
 		ACDC5323178CE3C8003BE73C /* OpenGL Textured Triangle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGL Textured Triangle-Prefix.pch"; sourceTree = "<group>"; };
 		ACDC5324178CE3C8003BE73C /* GLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLAppDelegate.h; sourceTree = "<group>"; };
 		ACDC5325178CE3C8003BE73C /* GLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLAppDelegate.m; sourceTree = "<group>"; };
-		ACDC5327178CE3C8003BE73C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		ACDC5329178CE3C8003BE73C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		ACDC532B178CE3C8003BE73C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ACDC5334178CE436003BE73C /* GLEU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEU.h; sourceTree = "<group>"; };
+		ACDC5335178CE436003BE73C /* GLEUContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEUContext.h; sourceTree = "<group>"; };
+		ACDC5336178CE436003BE73C /* GLEUContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEUContext.m; sourceTree = "<group>"; };
+		ACDC5337178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEUVertexAttributeArrayBuffer.h; sourceTree = "<group>"; };
+		ACDC5338178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEUVertexAttributeArrayBuffer.m; sourceTree = "<group>"; };
+		ACDC5339178CE436003BE73C /* GLTriangleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleViewController.h; sourceTree = "<group>"; };
+		ACDC533A178CE436003BE73C /* GLTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTriangleViewController.m; sourceTree = "<group>"; };
+		ACDC533C178CE436003BE73C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ACDC533D178CE436003BE73C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		ACDC533E178CE436003BE73C /* Default.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.pxm; sourceTree = "<group>"; };
+		ACDC533F178CE436003BE73C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		ACDC5340178CE436003BE73C /* Default@2x.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default@2x.pxm"; sourceTree = "<group>"; };
+		ACDC5341178CE436003BE73C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		ACDC5342178CE436003BE73C /* Icon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon.pxm; sourceTree = "<group>"; };
+		ACDC5343178CE436003BE73C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		ACDC5344178CE436003BE73C /* Icon@2x.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Icon@2x.pxm"; sourceTree = "<group>"; };
+		ACDC5351178CE45B003BE73C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +102,11 @@
 		ACDC531B178CE3C8003BE73C /* OpenGL Textured Triangle */ = {
 			isa = PBXGroup;
 			children = (
-				ACDC5324178CE3C8003BE73C /* GLAppDelegate.h */,
-				ACDC5325178CE3C8003BE73C /* GLAppDelegate.m */,
+				ACDC5333178CE436003BE73C /* GLEU */,
+				ACDC5339178CE436003BE73C /* GLTriangleViewController.h */,
+				ACDC533A178CE436003BE73C /* GLTriangleViewController.m */,
+				ACDC5351178CE45B003BE73C /* iPhone.storyboard */,
+				ACDC533B178CE436003BE73C /* Resources */,
 				ACDC531C178CE3C8003BE73C /* Supporting Files */,
 			);
 			path = "OpenGL Textured Triangle";
@@ -88,15 +115,42 @@
 		ACDC531C178CE3C8003BE73C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC5324178CE3C8003BE73C /* GLAppDelegate.h */,
+				ACDC5325178CE3C8003BE73C /* GLAppDelegate.m */,
 				ACDC531D178CE3C8003BE73C /* OpenGL Textured Triangle-Info.plist */,
 				ACDC531E178CE3C8003BE73C /* InfoPlist.strings */,
 				ACDC5321178CE3C8003BE73C /* main.m */,
 				ACDC5323178CE3C8003BE73C /* OpenGL Textured Triangle-Prefix.pch */,
-				ACDC5327178CE3C8003BE73C /* Default.png */,
-				ACDC5329178CE3C8003BE73C /* Default@2x.png */,
-				ACDC532B178CE3C8003BE73C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACDC5333178CE436003BE73C /* GLEU */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC5334178CE436003BE73C /* GLEU.h */,
+				ACDC5335178CE436003BE73C /* GLEUContext.h */,
+				ACDC5336178CE436003BE73C /* GLEUContext.m */,
+				ACDC5337178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.h */,
+				ACDC5338178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m */,
+			);
+			path = GLEU;
+			sourceTree = "<group>";
+		};
+		ACDC533B178CE436003BE73C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC533C178CE436003BE73C /* Default-568h@2x.png */,
+				ACDC533D178CE436003BE73C /* Default.png */,
+				ACDC533E178CE436003BE73C /* Default.pxm */,
+				ACDC533F178CE436003BE73C /* Default@2x.png */,
+				ACDC5340178CE436003BE73C /* Default@2x.pxm */,
+				ACDC5341178CE436003BE73C /* Icon.png */,
+				ACDC5342178CE436003BE73C /* Icon.pxm */,
+				ACDC5343178CE436003BE73C /* Icon@2x.png */,
+				ACDC5344178CE436003BE73C /* Icon@2x.pxm */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACDC532F178CE3C8003BE73C /* Build configuration list for PBXNativeTarget "OpenGL Textured Triangle" */;
 			buildPhases = (
+				ACDC5332178CE3DA003BE73C /* ShellScript */,
 				ACDC530E178CE3C8003BE73C /* Sources */,
 				ACDC530F178CE3C8003BE73C /* Frameworks */,
 				ACDC5310178CE3C8003BE73C /* Resources */,
@@ -152,13 +207,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACDC5320178CE3C8003BE73C /* InfoPlist.strings in Resources */,
-				ACDC5328178CE3C8003BE73C /* Default.png in Resources */,
-				ACDC532A178CE3C8003BE73C /* Default@2x.png in Resources */,
-				ACDC532C178CE3C8003BE73C /* Default-568h@2x.png in Resources */,
+				ACDC5348178CE436003BE73C /* Default-568h@2x.png in Resources */,
+				ACDC5349178CE436003BE73C /* Default.png in Resources */,
+				ACDC534A178CE436003BE73C /* Default.pxm in Resources */,
+				ACDC534B178CE436003BE73C /* Default@2x.png in Resources */,
+				ACDC534C178CE436003BE73C /* Default@2x.pxm in Resources */,
+				ACDC534D178CE436003BE73C /* Icon.png in Resources */,
+				ACDC534E178CE436003BE73C /* Icon.pxm in Resources */,
+				ACDC534F178CE436003BE73C /* Icon@2x.png in Resources */,
+				ACDC5350178CE436003BE73C /* Icon@2x.pxm in Resources */,
+				ACDC5352178CE45B003BE73C /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACDC5332178CE3DA003BE73C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ACDC530E178CE3C8003BE73C /* Sources */ = {
@@ -167,6 +245,9 @@
 			files = (
 				ACDC5322178CE3C8003BE73C /* main.m in Sources */,
 				ACDC5326178CE3C8003BE73C /* GLAppDelegate.m in Sources */,
+				ACDC5345178CE436003BE73C /* GLEUContext.m in Sources */,
+				ACDC5346178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m in Sources */,
+				ACDC5347178CE436003BE73C /* GLTriangleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
