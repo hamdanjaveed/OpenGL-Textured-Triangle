@@ -17,14 +17,19 @@
 // A struct that contains information for one vertex.
 typedef struct {
     // The position of the vertex in 3D-space.
-    float position[3];
+    GLKVector3 position;
+    // The texture coordinates of the vertex.
+    GLKVector2 texture;
 } vertex;
 
 // The vertex data for the triangle, the triangle is an equilateral triangle centered at (0, 0, 0).
 const vertex triangleVBData[] = {
-    { 0.0f,  0.5f, 0.0f},
-    {-0.5f, -0.5f, 0.0f},
-    { 0.5f, -0.5f, 0.0f}
+    // top middle
+    {{ 0.0f,  0.5f, 0.0f}, {0.5f, 1.0f}},
+    // bottom left
+    {{-0.5f, -0.5f, 0.0f}, {0.0f, 0.0f}},
+    // bottom right
+    {{ 0.5f, -0.5f, 0.0f}, {1.0f, 0.0f}}
 };
 
 @interface GLTriangleViewController () <GLKViewDelegate>
@@ -65,6 +70,16 @@ const vertex triangleVBData[] = {
                                                                       numberOfVertices:sizeof(triangleVBData) / sizeof(vertex)
                                                                                   data:triangleVBData
                                                                                  usage:GL_STATIC_DRAW];
+    
+    // Setup spiral texture.
+    CGImageRef spiralImage = [[UIImage imageNamed:@"Spiral.png"] CGImage];
+    NSLog(@"%@", spiralImage);
+    GLKTextureInfo *spiralTextureInfo = [GLKTextureLoader textureWithCGImage:spiralImage
+                                                                     options:nil
+                                                                       error:NULL];
+    
+    self.effect.texture2d0.name = spiralTextureInfo.name;
+    self.effect.texture2d0.target = spiralTextureInfo.target;
 }
 
 // Called when going out of memory, should delete all contexts and buffers.
@@ -97,6 +112,10 @@ const vertex triangleVBData[] = {
     [self.triangleVertexBuffer prepareToDrawWithAttribute:GLKVertexAttribPosition
                                          numberOfVertices:sizeof(triangleVBData) / sizeof(vertex)
                                                    offset:offsetof(vertex, position)
+                                    shouldEnableAttribute:YES];
+    [self.triangleVertexBuffer prepareToDrawWithAttribute:GLKVertexAttribTexCoord0
+                                         numberOfVertices:2
+                                                   offset:offsetof(vertex, texture)
                                     shouldEnableAttribute:YES];
     
     // Draw the triangle.
