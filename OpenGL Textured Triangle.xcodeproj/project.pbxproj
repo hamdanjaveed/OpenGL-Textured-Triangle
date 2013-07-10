@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC90185E178DE62E00EF01EC /* Grid.png in Resources */ = {isa = PBXBuildFile; fileRef = AC90185D178DE62E00EF01EC /* Grid.png */; };
+		AC901864178E01F000EF01EC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AC901863178E01F000EF01EC /* Icon.png */; };
+		AC901866178E01F300EF01EC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC901865178E01F300EF01EC /* Icon@2x.png */; };
 		ACDC5316178CE3C8003BE73C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5315178CE3C8003BE73C /* UIKit.framework */; };
 		ACDC5318178CE3C8003BE73C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5317178CE3C8003BE73C /* Foundation.framework */; };
 		ACDC531A178CE3C8003BE73C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5319178CE3C8003BE73C /* CoreGraphics.framework */; };
@@ -18,17 +21,19 @@
 		ACDC5347178CE436003BE73C /* GLTriangleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC533A178CE436003BE73C /* GLTriangleViewController.m */; };
 		ACDC5348178CE436003BE73C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533C178CE436003BE73C /* Default-568h@2x.png */; };
 		ACDC5349178CE436003BE73C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533D178CE436003BE73C /* Default.png */; };
-		ACDC534A178CE436003BE73C /* Default.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533E178CE436003BE73C /* Default.pxm */; };
 		ACDC534B178CE436003BE73C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC533F178CE436003BE73C /* Default@2x.png */; };
-		ACDC534C178CE436003BE73C /* Default@2x.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5340178CE436003BE73C /* Default@2x.pxm */; };
-		ACDC534D178CE436003BE73C /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5341178CE436003BE73C /* Icon.png */; };
-		ACDC534E178CE436003BE73C /* Icon.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5342178CE436003BE73C /* Icon.pxm */; };
-		ACDC534F178CE436003BE73C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5343178CE436003BE73C /* Icon@2x.png */; };
-		ACDC5350178CE436003BE73C /* Icon@2x.pxm in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5344178CE436003BE73C /* Icon@2x.pxm */; };
-		ACDC5352178CE45B003BE73C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5351178CE45B003BE73C /* iPhone.storyboard */; };
+		ACDC5354178CE6E6003BE73C /* Spiral.png in Resources */ = {isa = PBXBuildFile; fileRef = ACDC5353178CE6E6003BE73C /* Spiral.png */; };
+		ACDC535B178CE898003BE73C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5359178CE88E003BE73C /* QuartzCore.framework */; };
+		ACDC535C178CE898003BE73C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5355178CE88A003BE73C /* GLKit.framework */; };
+		ACDC535D178CE898003BE73C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDC5356178CE88A003BE73C /* OpenGLES.framework */; };
+		ACDC535F178CE9F3003BE73C /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDC535E178CE9F3003BE73C /* iPhone.storyboard */; };
+		ACDC5362178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDC5361178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC90185D178DE62E00EF01EC /* Grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Grid.png; sourceTree = "<group>"; };
+		AC901863178E01F000EF01EC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AC901865178E01F300EF01EC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		ACDC5312178CE3C8003BE73C /* OpenGL Textured Triangle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGL Textured Triangle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDC5315178CE3C8003BE73C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACDC5317178CE3C8003BE73C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,14 +53,14 @@
 		ACDC533A178CE436003BE73C /* GLTriangleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTriangleViewController.m; sourceTree = "<group>"; };
 		ACDC533C178CE436003BE73C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		ACDC533D178CE436003BE73C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		ACDC533E178CE436003BE73C /* Default.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Default.pxm; sourceTree = "<group>"; };
 		ACDC533F178CE436003BE73C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		ACDC5340178CE436003BE73C /* Default@2x.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default@2x.pxm"; sourceTree = "<group>"; };
-		ACDC5341178CE436003BE73C /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		ACDC5342178CE436003BE73C /* Icon.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon.pxm; sourceTree = "<group>"; };
-		ACDC5343178CE436003BE73C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		ACDC5344178CE436003BE73C /* Icon@2x.pxm */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Icon@2x.pxm"; sourceTree = "<group>"; };
-		ACDC5351178CE45B003BE73C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		ACDC5353178CE6E6003BE73C /* Spiral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spiral.png; sourceTree = "<group>"; };
+		ACDC5355178CE88A003BE73C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		ACDC5356178CE88A003BE73C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		ACDC5359178CE88E003BE73C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACDC535E178CE9F3003BE73C /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		ACDC5360178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h"; sourceTree = "<group>"; };
+		ACDC5361178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDC535B178CE898003BE73C /* QuartzCore.framework in Frameworks */,
+				ACDC535C178CE898003BE73C /* GLKit.framework in Frameworks */,
+				ACDC535D178CE898003BE73C /* OpenGLES.framework in Frameworks */,
 				ACDC5316178CE3C8003BE73C /* UIKit.framework in Frameworks */,
 				ACDC5318178CE3C8003BE73C /* Foundation.framework in Frameworks */,
 				ACDC531A178CE3C8003BE73C /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +83,8 @@
 		ACDC5309178CE3C8003BE73C = {
 			isa = PBXGroup;
 			children = (
+				AC901865178E01F300EF01EC /* Icon@2x.png */,
+				AC901863178E01F000EF01EC /* Icon.png */,
 				ACDC531B178CE3C8003BE73C /* OpenGL Textured Triangle */,
 				ACDC5314178CE3C8003BE73C /* Frameworks */,
 				ACDC5313178CE3C8003BE73C /* Products */,
@@ -92,6 +102,9 @@
 		ACDC5314178CE3C8003BE73C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC5359178CE88E003BE73C /* QuartzCore.framework */,
+				ACDC5355178CE88A003BE73C /* GLKit.framework */,
+				ACDC5356178CE88A003BE73C /* OpenGLES.framework */,
 				ACDC5315178CE3C8003BE73C /* UIKit.framework */,
 				ACDC5317178CE3C8003BE73C /* Foundation.framework */,
 				ACDC5319178CE3C8003BE73C /* CoreGraphics.framework */,
@@ -105,7 +118,7 @@
 				ACDC5333178CE436003BE73C /* GLEU */,
 				ACDC5339178CE436003BE73C /* GLTriangleViewController.h */,
 				ACDC533A178CE436003BE73C /* GLTriangleViewController.m */,
-				ACDC5351178CE45B003BE73C /* iPhone.storyboard */,
+				ACDC535E178CE9F3003BE73C /* iPhone.storyboard */,
 				ACDC533B178CE436003BE73C /* Resources */,
 				ACDC531C178CE3C8003BE73C /* Supporting Files */,
 			);
@@ -133,6 +146,8 @@
 				ACDC5336178CE436003BE73C /* GLEUContext.m */,
 				ACDC5337178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.h */,
 				ACDC5338178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m */,
+				ACDC5360178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h */,
+				ACDC5361178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */,
 			);
 			path = GLEU;
 			sourceTree = "<group>";
@@ -140,15 +155,11 @@
 		ACDC533B178CE436003BE73C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AC90185D178DE62E00EF01EC /* Grid.png */,
+				ACDC5353178CE6E6003BE73C /* Spiral.png */,
 				ACDC533C178CE436003BE73C /* Default-568h@2x.png */,
 				ACDC533D178CE436003BE73C /* Default.png */,
-				ACDC533E178CE436003BE73C /* Default.pxm */,
 				ACDC533F178CE436003BE73C /* Default@2x.png */,
-				ACDC5340178CE436003BE73C /* Default@2x.pxm */,
-				ACDC5341178CE436003BE73C /* Icon.png */,
-				ACDC5342178CE436003BE73C /* Icon.pxm */,
-				ACDC5343178CE436003BE73C /* Icon@2x.png */,
-				ACDC5344178CE436003BE73C /* Icon@2x.pxm */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -209,14 +220,12 @@
 				ACDC5320178CE3C8003BE73C /* InfoPlist.strings in Resources */,
 				ACDC5348178CE436003BE73C /* Default-568h@2x.png in Resources */,
 				ACDC5349178CE436003BE73C /* Default.png in Resources */,
-				ACDC534A178CE436003BE73C /* Default.pxm in Resources */,
 				ACDC534B178CE436003BE73C /* Default@2x.png in Resources */,
-				ACDC534C178CE436003BE73C /* Default@2x.pxm in Resources */,
-				ACDC534D178CE436003BE73C /* Icon.png in Resources */,
-				ACDC534E178CE436003BE73C /* Icon.pxm in Resources */,
-				ACDC534F178CE436003BE73C /* Icon@2x.png in Resources */,
-				ACDC5350178CE436003BE73C /* Icon@2x.pxm in Resources */,
-				ACDC5352178CE45B003BE73C /* iPhone.storyboard in Resources */,
+				ACDC5354178CE6E6003BE73C /* Spiral.png in Resources */,
+				ACDC535F178CE9F3003BE73C /* iPhone.storyboard in Resources */,
+				AC90185E178DE62E00EF01EC /* Grid.png in Resources */,
+				AC901864178E01F000EF01EC /* Icon.png in Resources */,
+				AC901866178E01F300EF01EC /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +257,7 @@
 				ACDC5345178CE436003BE73C /* GLEUContext.m in Sources */,
 				ACDC5346178CE436003BE73C /* GLEUVertexAttributeArrayBuffer.m in Sources */,
 				ACDC5347178CE436003BE73C /* GLTriangleViewController.m in Sources */,
+				ACDC5362178CEB0E003BE73C /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +372,7 @@
 				ACDC5331178CE3C8003BE73C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

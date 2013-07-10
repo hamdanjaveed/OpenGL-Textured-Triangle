@@ -1,29 +1,82 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WOS-La-mxh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CTT-7s-JoQ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--GLKit View Controller-->
-        <scene sceneID="U4l-b1-QRz">
+        <scene sceneID="NIl-iX-tmu">
             <objects>
-                <glkViewController autoresizesArchivedViewToFullSize="NO" preferredFramesPerSecond="30" id="WOS-La-mxh" customClass="GLTriangleViewController" sceneMemberID="viewController">
-                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ska-E2-xJM">
+                <glkViewController autoresizesArchivedViewToFullSize="NO" preferredFramesPerSecond="30" id="CTT-7s-JoQ" customClass="GLTriangleViewController" sceneMemberID="viewController">
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QPx-aW-uL1">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-jh-amx"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WOd-FV-5wK"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-lY-S38"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BsP-TL-J8G"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Animation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Nr-we-6fh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Linear Filter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kav-kG-p0h">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Repeat Texture" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGi-Lx-93f">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="qbl-lY-S38" firstAttribute="leading" secondItem="QPx-aW-uL1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1dp-dd-BCm"/>
+                            <constraint firstItem="nx3-jh-amx" firstAttribute="top" secondItem="WOd-FV-5wK" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="2Zd-XL-Y12"/>
+                            <constraint firstItem="Kav-kG-p0h" firstAttribute="leading" secondItem="WOd-FV-5wK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3G2-WV-sU6"/>
+                            <constraint firstAttribute="bottom" secondItem="nx3-jh-amx" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="5iV-mL-UWJ"/>
+                            <constraint firstItem="qbl-lY-S38" firstAttribute="centerY" secondItem="9Nr-we-6fh" secondAttribute="centerY" type="default" id="7Ql-I8-hOR"/>
+                            <constraint firstItem="AGi-Lx-93f" firstAttribute="centerY" secondItem="nx3-jh-amx" secondAttribute="centerY" type="default" id="Alt-hj-FpK"/>
+                            <constraint firstItem="WOd-FV-5wK" firstAttribute="leading" secondItem="QPx-aW-uL1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="JoA-R6-ss2"/>
+                            <constraint firstItem="Kav-kG-p0h" firstAttribute="centerY" secondItem="WOd-FV-5wK" secondAttribute="centerY" type="default" id="N32-Qp-uSm"/>
+                            <constraint firstItem="AGi-Lx-93f" firstAttribute="leading" secondItem="nx3-jh-amx" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VLS-BG-Khs"/>
+                            <constraint firstItem="qbl-lY-S38" firstAttribute="top" secondItem="BsP-TL-J8G" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="WUo-lW-bI9"/>
+                            <constraint firstAttribute="trailing" secondItem="BsP-TL-J8G" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ZMr-aG-hpv"/>
+                            <constraint firstItem="WOd-FV-5wK" firstAttribute="top" secondItem="qbl-lY-S38" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="gAn-7j-Z2y"/>
+                            <constraint firstItem="nx3-jh-amx" firstAttribute="leading" secondItem="QPx-aW-uL1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hz4-fe-3d3"/>
+                            <constraint firstItem="BsP-TL-J8G" firstAttribute="leading" secondItem="QPx-aW-uL1" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rqh-km-Vla"/>
+                            <constraint firstItem="9Nr-we-6fh" firstAttribute="leading" secondItem="qbl-lY-S38" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="tpG-hY-2AH"/>
+                        </constraints>
                         <connections>
-                            <outlet property="delegate" destination="WOS-La-mxh" id="49x-zT-SEb"/>
+                            <outlet property="delegate" destination="CTT-7s-JoQ" id="QRk-ya-ZbG"/>
                         </connections>
                     </glkView>
+                    <connections>
+                        <outlet property="repeatTextureSwitch" destination="nx3-jh-amx" id="JCZ-Ra-LIJ"/>
+                        <outlet property="sOffset" destination="BsP-TL-J8G" id="BCG-20-rW2"/>
+                        <outlet property="shouldAnimateSwitch" destination="qbl-lY-S38" id="FvL-jl-Geo"/>
+                        <outlet property="useLinearInterpolationSwitch" destination="WOd-FV-5wK" id="Enp-GP-cLE"/>
+                    </connections>
                 </glkViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bpP-AU-gKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qm-RY-zIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="92"/>
+            <point key="canvasLocation" x="-395" y="380"/>
         </scene>
     </scenes>
     <classes>
         <class className="GLTriangleViewController" superclassName="GLKViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GLTriangleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="repeatTextureSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="sOffset" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="shouldAnimateSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="useLinearInterpolationSwitch" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
